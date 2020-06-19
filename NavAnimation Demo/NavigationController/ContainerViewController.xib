@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController" customModule="NavAnimation_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintHeightBar" destination="HXT-h2-9Wy" id="zMG-pP-AmO"/>
+                <outlet property="navigationView" destination="wvu-si-1mL" id="YfL-fc-MSM"/>
+                <outlet property="stackView" destination="tnd-Rc-BNg" id="JFQ-wR-eQ0"/>
+                <outlet property="titleLabel" destination="Ydn-uu-JEt" id="DaP-8c-9a4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8jO-8H-Ekd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvu-si-1mL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cES-1A-HWF">
+                    <rect key="frame" x="20" y="44" width="374" height="33.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydn-uu-JEt">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="33.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HXT-h2-9Wy"/>
+                        <constraint firstAttribute="bottom" secondItem="Ydn-uu-JEt" secondAttribute="bottom" id="Pkt-k2-wcZ"/>
+                        <constraint firstItem="Ydn-uu-JEt" firstAttribute="top" secondItem="cES-1A-HWF" secondAttribute="top" id="YhP-8S-Fc5"/>
+                        <constraint firstAttribute="trailing" secondItem="Ydn-uu-JEt" secondAttribute="trailing" id="hdr-4W-f0V"/>
+                        <constraint firstItem="Ydn-uu-JEt" firstAttribute="leading" secondItem="cES-1A-HWF" secondAttribute="leading" id="jjh-fu-ryh"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tnd-Rc-BNg">
+                    <rect key="frame" x="0.0" y="87.5" width="414" height="808.5"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="wvu-si-1mL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0NI-Sy-LJA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tnd-Rc-BNg" secondAttribute="trailing" id="7Vi-tc-GPW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cES-1A-HWF" secondAttribute="trailing" constant="20" id="Vxs-Ks-5VK"/>
+                <constraint firstItem="cES-1A-HWF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Y8v-XZ-z46"/>
+                <constraint firstItem="wvu-si-1mL" firstAttribute="bottom" secondItem="cES-1A-HWF" secondAttribute="bottom" constant="10" id="dBw-6u-UxS"/>
+                <constraint firstItem="tnd-Rc-BNg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dNq-LN-kTc"/>
+                <constraint firstItem="cES-1A-HWF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="poi-Yn-q72"/>
+                <constraint firstAttribute="bottom" secondItem="tnd-Rc-BNg" secondAttribute="bottom" id="qOY-zm-OSc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wvu-si-1mL" secondAttribute="trailing" id="qbA-KY-nRw"/>
+                <constraint firstItem="tnd-Rc-BNg" firstAttribute="top" secondItem="cES-1A-HWF" secondAttribute="bottom" constant="10" id="ur5-pk-fOh"/>
+                <constraint firstItem="wvu-si-1mL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y3l-ud-dEW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </view>
+    </objects>
+</document>
